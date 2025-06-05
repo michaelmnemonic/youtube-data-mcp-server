@@ -22,6 +22,15 @@
 
     };
 
+    youtube-data-mcp-server = {
+      youtube-data-mcp-server = {
+        type = "app";
+        program = "${nixpkgs.legacyPackages.aarch64-linux.node}/bin/node ${nixpkgs.legacyPackages.aarch64-linux.youtube-data-mcp-server}/dist/index.js";
+      };
+    };
+
+    app.aarch64-linux.default = app.aarch64-linux.youtube-data-mcp-server;
+
     packages.aarch64-linux.default = self.packages.aarch64-linux.youtube-data-mcp-server;
 
     devShells.aarch64-linux.default = nixpkgs.legacyPackages.aarch64-linux.mkShell {
