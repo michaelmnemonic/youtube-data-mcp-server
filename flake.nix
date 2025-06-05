@@ -13,7 +13,7 @@
 
       src = ./.;
 
-      npmDepsHash = "sha256-RTROQkoOpRUiBvB1zXittXB1HgtBN+GLTD0tx+ZkWaA=";
+      npmDepsHash = "sha256-sGs6ZHcO/7I6m5tytHr7gw8P8nd8bQ3H7sZ1yqW4YFY=";
     };
 
     packages.aarch64-linux.default = self.packages.aarch64-linux.youtube-data-mcp-server;
