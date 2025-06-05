@@ -19,8 +19,7 @@
     "prebuild": "npm run clean",
     "lint": "eslint src/**/*.ts",
     "test": "jest",
-    "prepare": "npm run build",
-    "postinstall": "chmod +x ./dist/index.js"
+    "prepare": "npm run build"
   },
   "keywords": [
     "mcp",
