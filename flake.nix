@@ -29,7 +29,7 @@
       };
     };
 
-    app.aarch64-linux.default = app.aarch64-linux.youtube-data-mcp-server;
+    app.aarch64-linux.default = self.app.aarch64-linux.youtube-data-mcp-server;
 
     packages.aarch64-linux.default = self.packages.aarch64-linux.youtube-data-mcp-server;
 
